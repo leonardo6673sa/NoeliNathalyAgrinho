@@ -1,0 +1,127 @@
+/* Resetando margens e padding padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #115011;
+    color: #222221;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3e8e41;
+    color: rgb(239, 231, 231);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #110e0e;
+    margin-bottom: 20px;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #dde3d6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.story img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.story-content h3 {
+    font-size: 1.8rem;
+    color: #3e8e41;
+    margin-bottom: 10px;
+}
+
+.story-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção de Conexões */
+#conexao {
+    background-color: #e7f5e6;
+}
+
+#conexao h2 {
+    color: #3e8e41;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+}
